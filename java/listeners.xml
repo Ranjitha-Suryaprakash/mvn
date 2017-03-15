@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Listeners TestSuite" parallel="tests">
+
+<listeners>
+	<listener class-name="testNG.listeners"></listener>
+</listeners>
+
+<test name="FireFox Listeners Test">
+	<classes>
+		<class name="testNG.TestNG_Listeners">
+		</class>
+	</classes>
+</test>
+</suite>

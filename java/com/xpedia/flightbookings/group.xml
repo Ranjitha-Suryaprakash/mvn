@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="GroupSuite">
+  <test name="Grouping demo" preserve-order="true">
+  <groups>
+	<define name="Honda and SUV">
+		<include name="Honda" />
+		<include name="SUV" /> 
+		<include name="Sedan" />
+	</define>
+	<define name="BMW and AUDI">
+	    <include name="BMW"/>
+	    <include name="AUDI"/>
+	</define>
+	<!-- run>
+		<include name="Honda and SUV" />
+	</run-->
+	<run> 
+	<include name="BMW"/>
+    </run>
+</groups>
+  
+    <classes>
+      <class name="com.xpedia.flightbookings.TestNG_Group"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

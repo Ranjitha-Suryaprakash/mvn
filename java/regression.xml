@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GroupSuite">
+  <test name="Grouping demo" preserve-order="true">
+  <groups>
+	<define name="Honda and SUV">
+		<include name="Honda" />
+		<include name="SUV" /> 
+		<include name="Sedan" />
+	</define>
+	<define name="BMW and Audi">
+	    <include name="BMW"/>
+	    <include name="Audi"/>
+	</define>
+	<!-- run>
+		<include name="Honda and SUV" />
+	</run-->
+	<run> 
+	<include name="BMW and Audi"/>
+    </run>
+</groups>
+  
+    <classes>
+      <class name="com.xpedia.flightbookings.TestNG_Group"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

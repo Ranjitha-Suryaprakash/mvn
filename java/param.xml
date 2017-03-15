@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Param_dataProvider Suite" parallel="false">
+  <test name="param_dataProvider">
+  <parameter name="origin" value="New York"/>
+  <parameter name="dest" value="Chicago" />
+  <parameter name="depDate" value="12/26/2016" />
+  <parameter name="retDate" value="12/28/2016" />
+    <classes>
+      <class name="testNG.param_dataProvider">
+      <methods>
+      <include name="searchWithMultipleData"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

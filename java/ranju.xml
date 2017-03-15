@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MySuite">
+<test name="Madhugiri" preserve-order="false">
+<classes>
+	<class name="testNG.sample">
+		<methods>
+			<include name="fillBasicInfo" />
+			<include name="fillAdvancedInfo" />
+		</methods>
+	</class>
+</classes>
+</test>
+</suite>

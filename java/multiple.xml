@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="multiple" parallel="true" preserve-order="true">
+  <test name="firefox">
+  <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="testNG.Multiple_browsers"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="chrome">
+  <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="testNG.Multiple_browsers"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
